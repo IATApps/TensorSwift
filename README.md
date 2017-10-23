@@ -1,6 +1,6 @@
 # TensorSwift
 
-_TensorSwift_ is a lightweight library to calculate tensors, which has similar APIs to [_TensorFlow_](https://www.tensorflow.org/)'s. _TensorSwift_ is useful to simulate calculating tensors in Swift __using models trained by _TensorFlow___.
+_TensorSwift_ is a lightweight library to calculate tensors, which has similar APIs to [_TensorFlow_](https://www.tensorflow.org/)'s. _TensorSwift_ is useful to simulate calculating tensors in Swift **using models trained by _TensorFlow_**.
 
 ```swift
 let a = Tensor(shape: [2, 3], elements: [1, 2, 3, 4, 5, 6])
@@ -31,15 +31,15 @@ public struct Classifier {
     public let b_fc1: Tensor
     public let W_fc2: Tensor
     public let b_fc2: Tensor
-
-    public func classify(x_image: Tensor) -> Int {
+    
+    public func classify(_ x_image: Tensor) -> Int {
         let h_conv1 = (x_image.conv2d(filter: W_conv1, strides: [1, 1, 1]) + b_conv1).relu()
         let h_pool1 = h_conv1.maxPool(kernelSize: [2, 2, 1], strides: [2, 2, 1])
         
         let h_conv2 = (h_pool1.conv2d(filter: W_conv2, strides: [1, 1, 1]) + b_conv2).relu()
         let h_pool2 = h_conv2.maxPool(kernelSize: [2, 2, 1], strides: [2, 2, 1])
         
-        let h_pool2_flat = h_pool2.reshaped([1, 7 * 7 * 64])
+        let h_pool2_flat = h_pool2.reshaped([1, Dimension(7 * 7 * 64)])
         let h_fc1 = (h_pool2_flat.matmul(W_fc1) + b_fc1).relu()
         
         let y_conv = (h_fc1.matmul(W_fc2) + b_fc2).softmax()
@@ -54,7 +54,7 @@ public struct Classifier {
 ### Swift Package Manager
 
 ```swift
-.Package(url: "git@github.com:qoncept/TensorSwift.git", majorVersion: 0, minor: 2),
+.Package(url: "git@github.com:qoncept/TensorSwift.git", from: "0.2.0"),
 ```
 
 ### CocoaPods
