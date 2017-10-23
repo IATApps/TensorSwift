@@ -22,7 +22,7 @@ class CanvasView: UIView {
         let context = UIGraphicsGetCurrentContext()
         for line in canvas.lines {
             context?.setLineWidth(20.0)
-            context?.setStrokeColor(UIColor(colorLiteralRed: 0.0, green: 0.0, blue: 0.0, alpha: 1.0).cgColor)
+            context?.setStrokeColor(UIColor(red: 0.0, green: 0.0, blue: 0.0, alpha: 1.0).cgColor)
             context?.setLineCap(.round)
             context?.setLineJoin(.round)
             for (index, point) in line.points.enumerated() {
@@ -36,7 +36,7 @@ class CanvasView: UIView {
         context?.strokePath()
     }
     
-    func onPanGesture(_ gestureRecognizer: UIPanGestureRecognizer) {
+    @objc func onPanGesture(_ gestureRecognizer: UIPanGestureRecognizer) {
         canvas.draw(gestureRecognizer.location(in: self))
         if gestureRecognizer.state == .ended {
             canvas.newLine()
