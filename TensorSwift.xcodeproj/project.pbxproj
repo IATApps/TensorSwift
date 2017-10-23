@@ -43,14 +43,14 @@
 		A7C387FE1D9F616600091506 /* W_fc2 in Resources */ = {isa = PBXBuildFile; fileRef = A7C387F61D9F616600091506 /* W_fc2 */; };
 		A7C388031D9F629A00091506 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = A7C388001D9F619000091506 /* libz.tbd */; };
 		D646CEF61DBE1A25003E8A59 /* TensorMathTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = D646CEF51DBE1A25003E8A59 /* TensorMathTest.swift */; };
+		D66840171F9DDD7500D1DE7F /* Dimension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D668400E1F9DDD7500D1DE7F /* Dimension.swift */; };
+		D66840181F9DDD7500D1DE7F /* Operators.swift in Sources */ = {isa = PBXBuildFile; fileRef = D66840101F9DDD7500D1DE7F /* Operators.swift */; };
+		D66840191F9DDD7500D1DE7F /* Shape.swift in Sources */ = {isa = PBXBuildFile; fileRef = D66840111F9DDD7500D1DE7F /* Shape.swift */; };
+		D668401A1F9DDD7500D1DE7F /* Tensor.swift in Sources */ = {isa = PBXBuildFile; fileRef = D66840121F9DDD7500D1DE7F /* Tensor.swift */; };
+		D668401B1F9DDD7500D1DE7F /* TensorMath.swift in Sources */ = {isa = PBXBuildFile; fileRef = D66840131F9DDD7500D1DE7F /* TensorMath.swift */; };
+		D668401C1F9DDD7500D1DE7F /* TensorNN.swift in Sources */ = {isa = PBXBuildFile; fileRef = D66840141F9DDD7500D1DE7F /* TensorNN.swift */; };
+		D668401D1F9DDD7500D1DE7F /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = D66840161F9DDD7500D1DE7F /* Utils.swift */; };
 		_LinkFileRef_TensorSwift_via_TensorSwiftTests /* TensorSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "_____Product_TensorSwift" /* TensorSwift.framework */; };
-		__src_cc_ref_Sources/Dimension.swift /* Dimension.swift in Sources */ = {isa = PBXBuildFile; fileRef = __PBXFileRef_Sources/Dimension.swift /* Dimension.swift */; };
-		__src_cc_ref_Sources/Operators.swift /* Operators.swift in Sources */ = {isa = PBXBuildFile; fileRef = __PBXFileRef_Sources/Operators.swift /* Operators.swift */; };
-		__src_cc_ref_Sources/Shape.swift /* Shape.swift in Sources */ = {isa = PBXBuildFile; fileRef = __PBXFileRef_Sources/Shape.swift /* Shape.swift */; };
-		__src_cc_ref_Sources/Tensor.swift /* Tensor.swift in Sources */ = {isa = PBXBuildFile; fileRef = __PBXFileRef_Sources/Tensor.swift /* Tensor.swift */; };
-		__src_cc_ref_Sources/TensorMath.swift /* TensorMath.swift in Sources */ = {isa = PBXBuildFile; fileRef = __PBXFileRef_Sources/TensorMath.swift /* TensorMath.swift */; };
-		__src_cc_ref_Sources/TensorNN.swift /* TensorNN.swift in Sources */ = {isa = PBXBuildFile; fileRef = __PBXFileRef_Sources/TensorNN.swift /* TensorNN.swift */; };
-		__src_cc_ref_Sources/Utils.swift /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = __PBXFileRef_Sources/Utils.swift /* Utils.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -140,15 +140,17 @@
 		A7DF6F871D9BB9240097CEB7 /* TensorTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TensorTests.swift; sourceTree = "<group>"; };
 		A7DF6F8E1D9BB9660097CEB7 /* TensorSwiftTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TensorSwiftTests.swift; sourceTree = "<group>"; };
 		D646CEF51DBE1A25003E8A59 /* TensorMathTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TensorMathTest.swift; sourceTree = "<group>"; };
+		D668400E1F9DDD7500D1DE7F /* Dimension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Dimension.swift; sourceTree = "<group>"; };
+		D668400F1F9DDD7500D1DE7F /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D66840101F9DDD7500D1DE7F /* Operators.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Operators.swift; sourceTree = "<group>"; };
+		D66840111F9DDD7500D1DE7F /* Shape.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Shape.swift; sourceTree = "<group>"; };
+		D66840121F9DDD7500D1DE7F /* Tensor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Tensor.swift; sourceTree = "<group>"; };
+		D66840131F9DDD7500D1DE7F /* TensorMath.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TensorMath.swift; sourceTree = "<group>"; };
+		D66840141F9DDD7500D1DE7F /* TensorNN.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TensorNN.swift; sourceTree = "<group>"; };
+		D66840151F9DDD7500D1DE7F /* TensorSwift.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TensorSwift.h; sourceTree = "<group>"; };
+		D66840161F9DDD7500D1DE7F /* Utils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
 		__PBXFileRef_Package.swift /* Package.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Package.swift; sourceTree = "<group>"; };
 		__PBXFileRef_Resources /* Resources */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Resources; sourceTree = "<group>"; };
-		__PBXFileRef_Sources/Dimension.swift /* Dimension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dimension.swift; sourceTree = "<group>"; };
-		__PBXFileRef_Sources/Operators.swift /* Operators.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Operators.swift; sourceTree = "<group>"; };
-		__PBXFileRef_Sources/Shape.swift /* Shape.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Shape.swift; sourceTree = "<group>"; };
-		__PBXFileRef_Sources/Tensor.swift /* Tensor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tensor.swift; sourceTree = "<group>"; };
-		__PBXFileRef_Sources/TensorMath.swift /* TensorMath.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TensorMath.swift; sourceTree = "<group>"; };
-		__PBXFileRef_Sources/TensorNN.swift /* TensorNN.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TensorNN.swift; sourceTree = "<group>"; };
-		__PBXFileRef_Sources/Utils.swift /* Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
 		__PBXFileRef_TensorSwift.xcodeproj/Configs/Project.xcconfig /* TensorSwift.xcodeproj/Configs/Project.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = TensorSwift.xcodeproj/Configs/Project.xcconfig; sourceTree = "<group>"; };
 		"_____Product_TensorSwift" /* TensorSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = TensorSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		"_____Product_TensorSwiftTests" /* TensorSwiftTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; path = TensorSwiftTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -262,6 +264,23 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		D668400D1F9DDD7500D1DE7F /* TensorSwift */ = {
+			isa = PBXGroup;
+			children = (
+				D668400E1F9DDD7500D1DE7F /* Dimension.swift */,
+				D668400F1F9DDD7500D1DE7F /* Info.plist */,
+				D66840101F9DDD7500D1DE7F /* Operators.swift */,
+				D66840111F9DDD7500D1DE7F /* Shape.swift */,
+				D66840121F9DDD7500D1DE7F /* Tensor.swift */,
+				D66840131F9DDD7500D1DE7F /* TensorMath.swift */,
+				D66840141F9DDD7500D1DE7F /* TensorNN.swift */,
+				D66840151F9DDD7500D1DE7F /* TensorSwift.h */,
+				D66840161F9DDD7500D1DE7F /* Utils.swift */,
+			);
+			name = TensorSwift;
+			path = Sources/TensorSwift;
+			sourceTree = "<group>";
+		};
 		TestProducts_ /* Tests */ = {
 			isa = PBXGroup;
 			children = (
@@ -309,24 +328,9 @@
 		"_____Sources_" /* Sources */ = {
 			isa = PBXGroup;
 			children = (
-				"_______Group_TensorSwift" /* TensorSwift */,
+				D668400D1F9DDD7500D1DE7F /* TensorSwift */,
 			);
 			name = Sources;
-			sourceTree = "<group>";
-		};
-		"_______Group_TensorSwift" /* TensorSwift */ = {
-			isa = PBXGroup;
-			children = (
-				__PBXFileRef_Sources/Dimension.swift /* Dimension.swift */,
-				__PBXFileRef_Sources/Operators.swift /* Operators.swift */,
-				__PBXFileRef_Sources/Shape.swift /* Shape.swift */,
-				__PBXFileRef_Sources/Tensor.swift /* Tensor.swift */,
-				__PBXFileRef_Sources/TensorMath.swift /* TensorMath.swift */,
-				__PBXFileRef_Sources/TensorNN.swift /* TensorNN.swift */,
-				__PBXFileRef_Sources/Utils.swift /* Utils.swift */,
-			);
-			name = TensorSwift;
-			path = Sources;
 			sourceTree = "<group>";
 		};
 		"_______Group_TensorSwiftTests" /* TensorSwiftTests */ = {
@@ -572,13 +576,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 0;
 			files = (
-				__src_cc_ref_Sources/Dimension.swift /* Dimension.swift in Sources */,
-				__src_cc_ref_Sources/Operators.swift /* Operators.swift in Sources */,
-				__src_cc_ref_Sources/Shape.swift /* Shape.swift in Sources */,
-				__src_cc_ref_Sources/Tensor.swift /* Tensor.swift in Sources */,
-				__src_cc_ref_Sources/TensorMath.swift /* TensorMath.swift in Sources */,
-				__src_cc_ref_Sources/TensorNN.swift /* TensorNN.swift in Sources */,
-				__src_cc_ref_Sources/Utils.swift /* Utils.swift in Sources */,
+				D66840171F9DDD7500D1DE7F /* Dimension.swift in Sources */,
+				D66840191F9DDD7500D1DE7F /* Shape.swift in Sources */,
+				D668401C1F9DDD7500D1DE7F /* TensorNN.swift in Sources */,
+				D668401D1F9DDD7500D1DE7F /* Utils.swift in Sources */,
+				D668401A1F9DDD7500D1DE7F /* Tensor.swift in Sources */,
+				D66840181F9DDD7500D1DE7F /* Operators.swift in Sources */,
+				D668401B1F9DDD7500D1DE7F /* TensorMath.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -990,6 +994,7 @@
 		_ReleaseConf_TensorSwiftTests /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CLANG_ENABLE_MODULES = YES;
 				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				FRAMEWORK_SEARCH_PATHS = "$(PLATFORM_DIR)/Developer/Library/Frameworks";
@@ -1023,6 +1028,7 @@
 		"___DebugConf_TensorSwiftTests" /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CLANG_ENABLE_MODULES = YES;
 				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				FRAMEWORK_SEARCH_PATHS = "$(PLATFORM_DIR)/Developer/Library/Frameworks";
@@ -1059,6 +1065,7 @@
 				A7C387CC1D9F604A00091506 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
 		};
 		A7C387D21D9F604A00091506 /* Build configuration list for PBXNativeTarget "MNISTTests" */ = {
 			isa = XCConfigurationList;
@@ -1067,6 +1074,7 @@
 				A7C387CE1D9F604A00091506 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
 		};
 		A7C387D31D9F604A00091506 /* Build configuration list for PBXNativeTarget "MNISTUITests" */ = {
 			isa = XCConfigurationList;
@@ -1075,6 +1083,7 @@
 				A7C387D01D9F604A00091506 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
 		};
 		"___RootConfs_" /* Build configuration list for PBXProject "TensorSwift" */ = {
 			isa = XCConfigurationList;
