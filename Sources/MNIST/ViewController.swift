@@ -22,7 +22,7 @@ class ViewController: UIViewController {
             let rect = CGRect(x: 0.0, y: 0.0, width: CGFloat(inputSize), height: CGFloat(inputSize))
             context.draw(cgImage, in: rect)
             
-            input = Tensor(shape: [Dimension(inputSize), Dimension(inputSize), 1], elements: pixels.map { -(Float($0) / 255.0 - 0.5) + 0.5 })
+            input = Tensor(shape: [Dimension(inputSize), Dimension(inputSize), 1], elements: pixels.map { (pixel: UInt8) -> Float in -(Float(pixel) / 255.0 - 0.5) + 0.5 })
         }
 
         let estimatedLabel = classifier.classify(input)

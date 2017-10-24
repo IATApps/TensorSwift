@@ -3,8 +3,8 @@ import Foundation
 func downloadTestData() -> (images: Data, labels: Data) {
     let baseUrl = "http://yann.lecun.com/exdb/mnist/"
     
-    var testImagesUrl = URL(string: baseUrl)!.appendingPathComponent("t10k-images-idx3-ubyte.gz")
-    var testLabelsUrl = URL(string: baseUrl)!.appendingPathComponent("t10k-labels-idx1-ubyte.gz")
+    let testImagesUrl = URL(string: baseUrl)!.appendingPathComponent("t10k-images-idx3-ubyte.gz")
+    let testLabelsUrl = URL(string: baseUrl)!.appendingPathComponent("t10k-labels-idx1-ubyte.gz")
     
     print("download: \(testImagesUrl)")
     let testImages = try! Data(contentsOf: testImagesUrl)
